@@ -1,7 +1,7 @@
 import streamlit as st
 from multiapp import MultiApp
 from apps import home, data_stats, dna_app # import your app modules here
-from apps import covid, simple_stockprice
+from apps import covid, simple_stockprice,gaugechart
 
 app = MultiApp()
 
@@ -13,7 +13,7 @@ app.add_app("Data Stats", data_stats.app)
 app.add_app("Covid 19 Data", covid.app)
 app.add_app("Simple Stock Price App", simple_stockprice.app)
 app.add_app("DNA Nucleotide Count", dna_app.app)
-
+app.add_app("Gauge Chart", gaugechart.app)
 
 # The main app
 app.run()
