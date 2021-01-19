@@ -20,4 +20,4 @@ def app():
                      {'range': [250, 400], 'color': "gray"}],
                  'threshold' : {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': 490}}))
 
-    fig.show()
+    st.plotly_chart(fig)
